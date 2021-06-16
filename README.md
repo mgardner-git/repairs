@@ -7,6 +7,16 @@
 * Commit and push your work as-is
 * Email us a link to your repository 
 
+## Installation
+
+* Clone the repository
+* Navigate to the project root and execute `npm install`
+
+## Development
+
+To run the frontend Vue app `npm run serve`.
+To run the backend Node API `npm run api`
+
 ## Tasks
 
 ### Frontend Tasks
@@ -37,12 +47,3 @@
 * Let's add some validation to the ticket-saving logic from the previous step. Tickets should only be successfully saved if they reference a serial number from one of the objects in the [equipmentData](api/equipmentData.js) array. Otherwise, return an error to the user and log something helpful to the console.
 * It's test time! That's right, our QA person is tired of us breaking things that were previously working, and has asked us to add some unit tests. Add at least 1 unit test that tests the logic behind either of your endpoints. Use your testing framework of choice *or* just hand-roll a function to test it.
 
-## Installation
-
-* Clone the repository
-* Navigate to the project root and execute `npm install`
-
-## Development
-
-To run the frontend Vue app `npm run serve`.
-To run the backend Node API `npm run api`

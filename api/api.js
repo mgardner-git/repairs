@@ -1,9 +1,11 @@
+const cors = require("cors");
 const express = require("express");
-const app = express();
-
 const Equipment = require("./equipmentData");
 
-const port = 8100;
+const app = express();
+
+app.use(cors());
+app.options("*", cors());
 
 app.get("/equipment", (req, res) => {
   setTimeout(() => {
@@ -16,6 +18,8 @@ app.get("/equipment", (req, res) => {
     }
   }, 800);
 });
+
+const port = 8100;
 
 app.listen(port, () => {
   console.log(`Listening on ${port}...`);
